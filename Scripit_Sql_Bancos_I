@@ -1,1 +1,7 @@
-
+Favor Seguir !!!
+**** OBSERVAÇÕES:  
+	Em todos os scripts deve constar, antes do comando, 
+	 um comentário dizendo o que está sendo feito e qual tabela está sendo
+	 manipulada, além do número da questão equivalente. Exemplos:
+	 -- Inserção de dados na tabela Empregado – Questão 3.a 
+	 -- Seleção de todos os dependentes dos empregados que pertencem ao departamento de ‘Vendas’ 
