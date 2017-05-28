@@ -5,3 +5,6 @@ Favor Seguir !!!
 	 manipulada, além do número da questão equivalente. Exemplos:
 	 -- Inserção de dados na tabela Empregado – Questão 3.a 
 	 -- Seleção de todos os dependentes dos empregados que pertencem ao departamento de ‘Vendas’ 
+	 
+	 /* Alteração da tabela sessao inclusão do atributo data, tipo date - Questão 3.a*/
+	 	ALTER TABLE sessao ADD COLUMN data date;
