@@ -85,7 +85,7 @@ ALTER TABLE participa_obtido
 	 /* Alteração do atributo matricula da tabela professor para SET DEFAULT (NULL) - Questão 3.d*/
 		ALTER TABLE professor ALTER  matricula SET DEFAULT NULL;
 		
-	 /* Apagar a regra de chave estrangeira  da tabela curso (fkcurso), depois novamente inclui-la  - Questão 3.e*/
+	 /* Apagar a regra de chave estrangeira  da tabela curso (FKCurso), depois novamente inclui-la  - Questão 3.e*/
 		/* REMOVENDO*/
 			ALTER TABLE curso DROP CONSTRAINT FKCurso;
 		/*INCLUINDO*/
