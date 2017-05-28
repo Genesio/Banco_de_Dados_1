@@ -8,7 +8,7 @@ Favor Seguir !!!
 	 
 --->>> INICIO
 
-Questão 3º)
+3º Questão:
 
 	 /* Alteração da tabela sessao inclusão do atributo data, tipo date - Questão 3.a*/
 	 	ALTER TABLE sessao ADD COLUMN data date;
@@ -25,8 +25,17 @@ Questão 3º)
 		
 	 /* Apagar a regra de chave estrangeira  da tabela curso (fkcurso), depois novamente inclui-la  - Questão 3.e*/
 		/* REMOVENDO*/
-		ALTER TABLE curso DROP CONSTRAINT fkcurso;
+			ALTER TABLE curso DROP CONSTRAINT FKCurso;
 		/*INCLUINDO*/
+			ALTER TABLE curso 
+			ADD CONSTRAINT FKCurso 
+			FOREIGN KEY(idInstituicao) 
+			REFERENCES instituicao(idInstituicao)
+	                ON DELETE SET NULL
+	                ON UPDATE CASCADE;
+
+4º Questão:
+
 		
 
 
