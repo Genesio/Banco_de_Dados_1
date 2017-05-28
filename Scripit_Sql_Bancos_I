@@ -9,6 +9,13 @@ Favor Seguir !!!
 --->>> INICIO 
 	 /* Alteração da tabela sessao inclusão do atributo data, tipo date - Questão 3.a*/
 	 	ALTER TABLE sessao ADD COLUMN data date;
+	 
+	 /* Criação de um domínio usando o CHECK - Questão 3.b*/
+		CREATE DOMAIN "domsexo" AS character(1)
+		CONSTRAINT "domsexo_check" CHECK ((VALUE = ANY (ARRAY['M'::"bpchar", 'm'::"bpchar", 'F'::"bpchar", 'f'::"bpchar"])));
+	 
+	 /* Alteração da tabela professor Incluido o atributo sexo pertencente ao domínio domsexo - Questão 3.c*/
+	 	ALTER TABLE professor ADD COLUMN sexo "domsexo";
 
 
 
