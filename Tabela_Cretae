@@ -6,7 +6,7 @@ cnpj INTEGER,
 enderço VARCHAR(30),
 telefone VARCHAR(15),
 razãoSocial VARCHAR(20),
-CONSTRAINT PKInstituicao PRIMARIY KEY(idInstituicao)
+CONSTRAINT PKInstituicao PRIMARY KEY(idInstituicao)
 );
 
 CREATE TABLE CURSO (
