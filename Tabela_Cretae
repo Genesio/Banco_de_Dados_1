@@ -1,6 +1,6 @@
 -- 1. Criar as tabelas e suas chaves primárias --
 
-CREATE TABLE INSTITUIÇÃO (
+CREATE TABLE INSTITUICAO (
 idInstituicao INTEGER,
 cnpj INTEGER,
 enderço VARCHAR(30),
@@ -66,7 +66,7 @@ idCurso INTEGER,
 matricula INTEGER
 );
 
-CREATE TABLE SESSÃO (
+CREATE TABLE SESSAO (
 idSessao INTEGER,
 horaTermino INTEGER,
 secretarioMesa VARCHAR(30),
