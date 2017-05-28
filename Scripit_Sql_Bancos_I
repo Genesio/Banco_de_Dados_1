@@ -17,11 +17,11 @@ Favor Seguir !!!
 		CREATE DOMAIN "domsexo" AS character(1)
 		CONSTRAINT "domsexo_check" CHECK ((VALUE = ANY (ARRAY['M'::"bpchar", 'm'::"bpchar", 'F'::"bpchar", 'f'::"bpchar"])));
 	 
-	 /* Alteração da tabela professor incluido o atributo sexo pertencente ao domínio domsexo - Questão 3.c*/
+	 /* Alteração da tabela professor incluindo o atributo sexo pertencente ao domínio domsexo - Questão 3.c*/
 	 	ALTER TABLE professor ADD COLUMN sexo "domsexo";
 		
-	 /* Alteração do atributo matricula da tabela professor para SET DEFAULT  - Questão 3.d*/
-		ALTER TABLE professor ALTER COLUMN matricula SET NOT NULL;
+	 /* Alteração do atributo matricula da tabela professor para SET DEFAULT (NULL) - Questão 3.d*/
+		ALTER TABLE professor ALTER  matricula SET DEFAULT NULL;
 		
 	 /* Apagar a regra de chave estrangeira  da tabela curso (fkcurso), depois novamente inclui-la  - Questão 3.e*/
 		/* REMOVENDO*/
