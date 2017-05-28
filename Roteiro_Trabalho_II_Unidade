@@ -16,10 +16,12 @@ Além da postagem d o material no blackboard, o material impresso deve conter:
 
 2º Fase
 	Nível Fácil
-	1. Criar as tabelas e suas chaves primárias (create table...constraint) // JOSEMAR //Feito
+	1. Criar as tabelas e suas chaves primárias (create table...constraint) // JOSEMAR 
+	//Feito
 	
 	Nível Fácil
-	2. Modificar as tabelas acrescentando as regras (constraint) referentes às chaves externas (Alter table...add constraint). // JOSEMAR //Feito
+	2. Modificar as tabelas acrescentando as regras (constraint) referentes às chaves externas (Alter table...add constraint).
+	// JOSEMAR //Feito
 	
 	Nível Médio
 	3. Fazer modificações na estrutura de algumas tabelas: //Genesio
