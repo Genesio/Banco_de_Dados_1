@@ -22,7 +22,12 @@ Questão 3º)
 		
 	 /* Alteração do atributo matricula da tabela professor para SET DEFAULT  - Questão 3.d*/
 		ALTER TABLE professor ALTER COLUMN matricula SET NOT NULL;
-
+		
+	 /* Apagar a regra de chave estrangeira  da tabela curso (fkcurso), depois novamente inclui-la  - Questão 3.e*/
+		/* REMOVENDO*/
+		ALTER TABLE curso DROP CONSTRAINT fkcurso;
+		/*INCLUINDO*/
+		
 
 
 <<<--- FIM (COLOCAR O SCRIPT DENTO DO CAMCO ACIMA !!!).
