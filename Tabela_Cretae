@@ -45,7 +45,7 @@ CONSTRAINT PKCriterio PRIMARY KEY(idCriterio)
 );
 
 CREATE TABLE AVALIA (
-idCriterio INTEGER,
+idAvalia INTEGER,
 nota DECIMAL(5),
 );
 
