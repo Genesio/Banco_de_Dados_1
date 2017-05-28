@@ -16,21 +16,18 @@ Além da postagem d o material no blackboard, o material impresso deve conter:
 
 2º Fase
 	Nível Fácil
-	1. Criar as tabelas e suas chaves primárias (create table...constraint) // JOSEMAR 
+	1. Criar as tabelas e suas chaves primárias (create table...constraint) // JOSEMAR //Feito
 	
 	Nível Fácil
-	2. Modificar as tabelas acrescentando as regras (constraint) referentes //Josemar
-	   às chaves externas (Alter table...add constraint). 
+	2. Modificar as tabelas acrescentando as regras (constraint) referentes às chaves externas (Alter table...add constraint). // JOSEMAR //Feito
 	
 	Nível Médio
 	3. Fazer modificações na estrutura de algumas tabelas: //Genesio
-	   (a). Alteração de uma das tabelas para inclusão de um novo atributo 
-	   que não existia. 
-	   (b). Criação de um domínio usando o CHECK 
-		c. Alteração de uma das tabelas para inclusão de um novo atributo pertencente 
-		ao domínio criado no item 
-		d. Alteração de um dos atributos de uma das tabelas para SET DEFAULT 
-		e. Apagar uma regra de chave estrangeira, depois novamente inclui-la
+	      (a). Alteração de uma das tabelas para inclusão de um novo atributo que não existia. //Feito
+	      (b). Criação de um domínio usando o CHECK // Feito
+	      (c). Alteração de uma das tabelas para inclusão de um novo atributo pertencente ao domínio criado no item // Feito
+	      (d). Alteração de um dos atributos de uma das tabelas para SET DEFAULT //Feito
+	      (e). Apagar uma regra de chave estrangeira, depois novamente inclui-la //Feito
 	
 	
 	
