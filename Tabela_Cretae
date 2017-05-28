@@ -1,1 +1,144 @@
+-- 1. Criar as tabelas e suas chaves primárias --
+
+CREATE TABLE INSTITUIÇÃO (
+idInstituição INTEGER,
+cnpj INTEGER,
+enderço VARCHAR(30),
+telefone VARCHAR(15),
+razãoSocial VARCHAR(20),
+CONSTRAINT PKInstituicao PRIMARIY KEY(idInstituicao)
+);
+
+CREATE TABLE CURSO (
+idCurso INTEGER,
+nomeCurso VARCHAR(20),
+idInstituição INTEGER,
+CONSTRAINT PKCurso PRIMARY KEY(idCurso)
+);
+
+CREATE TABLE TURMA (
+idTurma INTEGER,
+nomeTurma VARCHAR(15),
+idCurso INTEGER,
+CONSTRAINT PKTurma PRIMARY KEY(idTurma)
+);
+
+CREATE TABLE ALUNO (
+matriculaAluno INTEGER,
+nomeAluno VARCHAR(30),
+idTurma INTEGER,
+CONSTRAINT PKAluno PRIMARY KEY(matriculaAluno)
+);
+
+CREATE TABLE DISCIPLINA (
+idDisciplina INTEGER,
+cargaHoraria INTEGER,
+nomeDisciplina VARCHAR(15),
+CONSTRAINT PKDisciplina PRIMARY KEY(idDisciplina)
+);
+
+CREATE TABLE CRITERIO (
+idCriterio INTEGER,
+nomeCriterio VARCHAR(15),
+idDisciplina INTEGER,
+CONSTRAINT PKCriterio PRIMARY KEY(idCriterio)
+);
+
+CREATE TABLE AVALIA (
+idCriterio INTEGER,
+nota DECIMAL(5),
+);
+
+CREATE TABLE PROFESSOR (
+matricula INTEGER,
+nomeProfessor VARCHAR(30),
+graduacao VARCHAR(20),
+CONSTRAINT PKProfessor PRIMARY KEY(matricula)
+);
+
+CREATE TABLE DISCIPLINACONTEM (
+idDisciplina INTEGER
+);
+
+CREATE TABLE ENSINA (
+idCurso INTEGER,
+matricula INTEGER
+);
+
+CREATE TABLE SESSÃO (
+idSessao INTEGER,
+horaTermino INTEGER,
+secretarioMesa VARCHAR(30),
+horaInicio INTEGER,
+coordenador VARCHAR(30),
+idTurma INTEGER,
+CONSTRAINT PKSessao PRIMARY KEY(idSessao)
+);
+
+CREATE TABLE PARTICIPA_OBITIDO (
+matriculaAluno INTEGER,
+idSessao INTEGER
+);
+
+
+-- 2. Modificar as tabelas acrescentando as regras referentes  às  chaves externas --
+
+ALTER TABLE curso 
+	ADD CONSTRAINT FKCurso FOREIGN KEY(idInstituicao) REFERENCES instituicao(idInstituicao)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE;
+
+ALTER TABLE turma
+	ADD CONSTRAINT FKTurma FOREIGN KEY(idCurso) REFERENCES curso(idCurso)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE;
+
+ALTER TABLE aluno
+	ADD CONSTRAINT FKAluno FOREIGN KEY(idTurma) REFERENCES turma(idTurma)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE;
+
+ALTER TABLE criterio
+	ADD CONSTRAINT FKCriterio FOREIGN KEY(idDisciplina) REFERENCES disciplina(idDisciplina)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE;
+
+ALTER TABLE avalia
+	ADD CONSTRAINT FKAvalia FOREIGN KEY(idcriterio) REFERENCES criterio(idCriterio)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE;
+
+ALTER TABLE disciplinacontem
+	ADD CONSTRAINT FKDisciplinaContem FOREIGN KEY(idDisciplina) REFERENCES disciplina(idDisciplina)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE;
+
+ALTER TABLE ensina
+	ADD CONSTRAINT FKEnsinaCurso FOREIGN KEY(idCurso) REFERENCES curso(idCurso)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE;
+
+ALTER TABLE ensina
+	ADD CONSTRAINT FKEnsinaProf FOREIGN KEY(matricula) REFERENCES professor(matricula)	
+	ON DELETE SET NULL
+	ON UPDATE CASCADE;
+
+ALTER TABLE sessao
+	ADD CONSTRAINT FKSessao FOREIGN KEY(idTurma) REFERENCES turma(idTurma)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE;
+
+ALTER TABLE participa_obtido
+	ADD CONSTRAINT FKParticipaAluno FOREIGN KEY(matriculaAluno) REFERENCES aluno(matriculaAluno)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE;
+
+ALTER TABLE participa_obtido
+	ADD CONSTRAINT FKParticipaSessao FOREIGN KEY(idSessao) REFERENCES sessao(idSessao)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE;
+
+
+
+
 
