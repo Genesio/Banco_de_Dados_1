@@ -1,5 +1,7 @@
--- 1. Criar as tabelas e suas chaves primárias --
-
+1º Questão:
+          /* Criar as tabelas e suas chaves primárias */
+          
+/* Criação da tabela instituição com 5 atributos e chave primaria*/
 CREATE TABLE INSTITUICAO (
 idInstituicao INTEGER,
 cnpj INTEGER,
