@@ -1,7 +1,7 @@
 -- 1. Criar as tabelas e suas chaves primárias --
 
 CREATE TABLE INSTITUIÇÃO (
-idInstituição INTEGER,
+idInstituicao INTEGER,
 cnpj INTEGER,
 enderço VARCHAR(30),
 telefone VARCHAR(15),
