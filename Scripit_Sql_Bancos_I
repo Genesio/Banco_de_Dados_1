@@ -70,7 +70,7 @@ ALTER TABLE participa_obtido
 /* FIM DA 2º  QUESTÃO */
 
 
-3º Questão:
+-- 3º Questão:
 
 	 /* Alteração da tabela sessao inclusão do atributo data, tipo date - Questão 3.a*/
 	 	ALTER TABLE sessao ADD COLUMN data date;
@@ -97,7 +97,7 @@ ALTER TABLE participa_obtido
 	                ON UPDATE CASCADE;
 /* FIM DA 3º QUESTÃO */
 
-4º Questão:
+-- 4º Questão:
 	/* Inserir dados (povoar o banco) nas tabelas. Mínimo de 5 tuplas por tabela */
 --﻿Povoando Tabela Instiuição
 INSERT INTO instituicao (cnpj, enderço, telefone, razaosocial)
