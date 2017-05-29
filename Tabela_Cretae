@@ -7,7 +7,7 @@
 /* Criação da tabela INSTITUICAO com 5 atributos e chave primaria*/
 CREATE TABLE INSTITUICAO (
 idInstituicao serial not null,
-cnpj INTEGER,
+cnpj VARCHAR(18),
 enderço VARCHAR(30),
 telefone VARCHAR(15),
 razaoSocial VARCHAR(20),
