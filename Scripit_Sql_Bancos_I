@@ -1,14 +1,14 @@
-Favor Seguir !!!
-**** OBSERVAÇÕES:  
-	Em todos os scripts deve constar, antes do comando, 
-	 um comentário dizendo o que está sendo feito e qual tabela está sendo
-	 manipulada, além do número da questão equivalente. Exemplos:
+--Favor Seguir !!!
+--**** OBSERVAÇÕES:  
+--	Em todos os scripts deve constar, antes do comando, 
+--	 um comentário dizendo o que está sendo feito e qual tabela está sendo
+--	 manipulada, além do número da questão equivalente. Exemplos:
 	 -- Inserção de dados na tabela Empregado – Questão 3.a 
 	 -- Seleção de todos os dependentes dos empregados que pertencem ao departamento de ‘Vendas’ 
 	 
 --->>> INICIO
 
-2º Questão)
+--2º Questão)
 
 	/* Modificar as tabelas acrescentando as regras referentes  às  chaves externas. */
 
@@ -233,6 +233,6 @@ INSERT INTO participa_obtido VALUES(1,4);
 INSERT INTO participa_obtido VALUES(3,3);
 
 
-<<<--- FIM (COLOCAR O SCRIPT DENTO DO CAMCO ACIMA !!!).
+--<<<--- FIM (COLOCAR O SCRIPT DENTO DO CAMCO ACIMA !!!).
 		
 		
