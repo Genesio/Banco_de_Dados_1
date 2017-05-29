@@ -71,14 +71,15 @@ Além da postagem d o material no blackboard, o material impresso deve conter:
 		l. Dados de 3 tabelas, usando sub-consultas 
 		m. Dados de 2 tabelas, usando GROUP BY, ORDER BY (ou produto cartesiano, ou join) 
 		n. Dados de 2 tabelas utilizando o JOIN o. Dados de 2 tabelas utilizando o LEFT JOIN (deve ser uma consulta diferente da anterior) 
+		o. Dados de 2 tabelas utilizando o LEFT JOIN (deve ser uma consulta diferente da anterior)
 		p. Dados de 2 tabelas utilizando o RIGHT JOIN (deve ser uma consulta diferente da anterior) 
 		q. Dados de 3 tabelas utilizando o IN (com sub-consulta). 
 		r. Dados de 2 tabelas usando o SELECT após o FROM. 
 		s. Dados de 3 tabelas, utilizando função de agregação. 
 		t. Unir duas consultas (UNION).
-				** 19 ==>> Requisitos Totais
+				** 20 ==>> Requisitos Totais
 				
-				*** Total 29 Requisitos <==
+				*** Total 30 Requisitos <==
 				
 **** OBSERVAÇÕES:  
  	 Em todos os scripts deve constar, antes do comando, 
