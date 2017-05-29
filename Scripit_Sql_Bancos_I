@@ -220,9 +220,9 @@ INSERT INTO disciplinacontem values(5);
 --Povoando Tabela Ensina
 INSERT INTO ensina values( 3,2);
 INSERT INTO ensina values( 5,1);
-INSERT INTO ensina values( 7,3);
+INSERT INTO ensina values( 2,3);
 INSERT INTO ensina values( 4,5);
-INSERT INTO ensina values( 6,4);
+INSERT INTO ensina values( 1,4);
 
 
 --Povoando Tabela participa_obtido
