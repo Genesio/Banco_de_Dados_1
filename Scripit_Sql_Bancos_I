@@ -210,6 +210,13 @@ INSERT INTO avalia(idcriterio,nota)
 values(5,7.5);
 
 
+--Povoando Tabela disciplinacontem
+INSERT INTO disciplinacontem values(1);
+INSERT INTO disciplinacontem values(3);
+INSERT INTO disciplinacontem values(4);
+INSERT INTO disciplinacontem values(2);
+INSERT INTO disciplinacontem values(5);
+
 <<<--- FIM (COLOCAR O SCRIPT DENTO DO CAMCO ACIMA !!!).
 		
 		
