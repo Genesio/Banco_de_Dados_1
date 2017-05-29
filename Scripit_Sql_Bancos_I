@@ -224,6 +224,15 @@ INSERT INTO ensina values( 7,3);
 INSERT INTO ensina values( 4,5);
 INSERT INTO ensina values( 6,4);
 
+
+--Povoando Tabela participa_obtido
+INSERT INTO participa_obtido VALUES(6,5);
+INSERT INTO participa_obtido VALUES(2,1);
+INSERT INTO participa_obtido VALUES(4,2);
+INSERT INTO participa_obtido VALUES(1,4);
+INSERT INTO participa_obtido VALUES(3,3);
+
+
 <<<--- FIM (COLOCAR O SCRIPT DENTO DO CAMCO ACIMA !!!).
 		
 		
