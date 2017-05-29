@@ -185,6 +185,18 @@ Values ('Claudia',4);
 INSERT INTO aluno ("nomealuno", "idturma")
 Values ('Ricardo',5);
 
+--Povoando Tabela Criterio
+INSERT INTO criterio(nomecriterio,iddisciplina)
+values('Presença',2);
+INSERT INTO criterio(nomecriterio,iddisciplina)
+values('Participação',5);
+INSERT INTO criterio(nomecriterio,iddisciplina)
+values('Pontualidade',1);
+INSERT INTO criterio(nomecriterio,iddisciplina)
+values('comprometimento',4);
+INSERT INTO criterio(nomecriterio,iddisciplina)
+values('nota',3);
+
 
 <<<--- FIM (COLOCAR O SCRIPT DENTO DO CAMCO ACIMA !!!).
 		
