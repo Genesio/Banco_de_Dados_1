@@ -2,8 +2,11 @@
           /* Criar as tabelas e suas chaves primárias */
           
 /* Criação da tabela INSTITUICAO com 5 atributos e chave primaria*/
+    /* Criar as tabelas e suas chaves primárias */
+          
+/* Criação da tabela INSTITUICAO com 5 atributos e chave primaria*/
 CREATE TABLE INSTITUICAO (
-idInstituicao INTEGER,
+idInstituicao serial not null,
 cnpj INTEGER,
 enderço VARCHAR(30),
 telefone VARCHAR(15),
@@ -11,36 +14,37 @@ razaoSocial VARCHAR(20),
 CONSTRAINT PKInstituicao PRIMARY KEY(idInstituicao)
 );
 
+
 CREATE TABLE CURSO (
-idCurso INTEGER,
+idCurso serial not null,
 nomeCurso VARCHAR(20),
 idInstituicao INTEGER,
 CONSTRAINT PKCurso PRIMARY KEY(idCurso)
 );
 
 CREATE TABLE TURMA (
-idTurma INTEGER,
+idTurma serial not null,
 nomeTurma VARCHAR(15),
 idCurso INTEGER,
 CONSTRAINT PKTurma PRIMARY KEY(idTurma)
 );
 
 CREATE TABLE ALUNO (
-matriculaAluno INTEGER,
+matriculaAluno serial not null,
 nomeAluno VARCHAR(30),
 idTurma INTEGER,
 CONSTRAINT PKAluno PRIMARY KEY(matriculaAluno)
 );
 
 CREATE TABLE DISCIPLINA (
-idDisciplina INTEGER,
+idDisciplina serial not null,
 cargaHoraria INTEGER,
 nomeDisciplina VARCHAR(15),
 CONSTRAINT PKDisciplina PRIMARY KEY(idDisciplina)
 );
 
 CREATE TABLE CRITERIO (
-idCriterio INTEGER,
+idCriterio serial not null,
 nomeCriterio VARCHAR(15),
 idDisciplina INTEGER,
 CONSTRAINT PKCriterio PRIMARY KEY(idCriterio)
@@ -53,14 +57,14 @@ CONSTRAINT PKAvalia PRIMARY KEY(idCriterio)
 );
 
 CREATE TABLE PROFESSOR (
-matricula INTEGER,
+matricula serial not null,
 nomeProfessor VARCHAR(30),
 graduacao VARCHAR(20),
 CONSTRAINT PKProfessor PRIMARY KEY(matricula)
 );
 
 CREATE TABLE DISCIPLINACONTEM (
-idDisciplina INTEGER
+idDisciplina serial not null
 );
 
 CREATE TABLE ENSINA (
@@ -69,7 +73,7 @@ matricula INTEGER
 );
 
 CREATE TABLE SESSAO (
-idSessao INTEGER,
+idSessao serial not null,
 horaTermino INTEGER,
 secretarioMesa VARCHAR(30),
 horaInicio INTEGER,
@@ -82,5 +86,3 @@ CREATE TABLE PARTICIPA_OBTIDO (
 matriculaAluno INTEGER,
 idSessao INTEGER
 );
-
-
