@@ -151,9 +151,9 @@ values('Redes',2);
 INSERT INTO turma(nometurma,idcurso)
 values ('robotica',3);
 INSERT INTO turma(nometurma,idcurso)
-values ('Manutenção',7);
+values ('Manutenção',2);
 INSERT INTO turma(nometurma,idcurso)
-values ('Roteadores',7);
+values ('Roteadores',1);
 INSERT INTO turma(nometurma,idcurso)
 values ('Calculo',5);
 INSERT INTO turma(nometurma,idcurso)
