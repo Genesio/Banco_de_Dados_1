@@ -197,6 +197,18 @@ values('comprometimento',4);
 INSERT INTO criterio(nomecriterio,iddisciplina)
 values('nota',3);
 
+--Povoando Tabela Avalia
+INSERT INTO avalia(idcriterio,nota)
+values(1,7.0);
+INSERT INTO avalia(idcriterio,nota)
+values(2,9.0);
+INSERT INTO avalia(idcriterio,nota)
+values(3,8.0);
+INSERT INTO avalia(idcriterio,nota)
+values(4,6.0);
+INSERT INTO avalia(idcriterio,nota)
+values(5,7.5);
+
 
 <<<--- FIM (COLOCAR O SCRIPT DENTO DO CAMCO ACIMA !!!).
 		
