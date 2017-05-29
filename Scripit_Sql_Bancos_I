@@ -99,7 +99,91 @@ ALTER TABLE participa_obtido
 
 4º Questão:
 	/* Inserir dados (povoar o banco) nas tabelas. Mínimo de 5 tuplas por tabela */
-		
+--﻿Povoando Tabela Instiuição
+INSERT INTO instituicao (cnpj, enderço, telefone, razaosocial)
+values (14017677000147,'Unifacs','33332222','Rua B');
+INSERT INTO instituicao (cnpj, enderço, telefone, razaosocial)
+values (14017677000148,'UEFS','33332222','AV. Transnordestina');
+INSERT INTO instituicao (cnpj, enderço, telefone, razaosocial)
+values (14017677000149,'FAT','33332222','RUA C');
+INSERT INTO instituicao (cnpj, enderço, telefone, razaosocial)
+values (14017677000149,'FAN','33332222','RUA D');
+INSERT INTO instituicao (cnpj, enderço, telefone, razaosocial)
+values (14017677000150,'UFRB','33332222','RUA A');
+
+--Povoando Tabela Disciplina
+INSERT INTO disciplina ( nomedisciplina, cargahoraria)
+values ('Banco I',60);
+INSERT INTO disciplina ( nomedisciplina, cargahoraria)
+values ('Banco II',45);
+INSERT INTO disciplina ( nomedisciplina, cargahoraria)
+values ('Redes',60);
+INSERT INTO disciplina ( nomedisciplina, cargahoraria)
+values ('RedesII',45);
+INSERT INTO disciplina ( nomedisciplina, cargahoraria)
+values ('LTP',60);
+
+--Povoando TabelaProfessor
+INSERT INTO professor(matricula,nomeprofessor,graduacao,sexo)
+values('Claudia Pinto','Doutorado','F');
+INSERT INTO professor(matricula,nomeprofessor,graduacao,sexo)
+values(2,'Ricardo Sena','Especialista','M');
+INSERT INTO professor(matricula,nomeprofessor,graduacao,sexo)
+values(3,'Marcio Carvalho','Especialista','M');
+INSERT INTO professor(matricula,nomeprofessor,graduacao,sexo)
+values(4,'Joseane Brandao','Especialista','F');
+INSERT INTO professor(matricula,nomeprofessor,graduacao,sexo)
+values(5,'Glediston','Mestre','M');
+
+--Povoando Tabela Curso
+INSERT INTO curso(nomecurso,idinstituicao)
+values('Sistema Informação',2);
+INSERT INTO curso(nomecurso,idinstituicao)
+values('Analise Sistemas',1);
+INSERT INTO curso(nomecurso,idinstituicao)
+values('Sistema Informação',3);
+INSERT INTO curso(nomecurso,idinstituicao)
+values('Analise Sistemas',5);
+INSERT INTO curso(nomecurso,idinstituicao)
+values('Redes',2);
+
+--Povoando Tabela Turma
+INSERT INTO turma(nometurma,idcurso)
+values ('robotica',3);
+INSERT INTO turma(nometurma,idcurso)
+values ('Manutenção',7);
+INSERT INTO turma(nometurma,idcurso)
+values ('Roteadores',7);
+INSERT INTO turma(nometurma,idcurso)
+values ('Calculo',5);
+INSERT INTO turma(nometurma,idcurso)
+values ('WEB',4);
+
+--Povoando Tabela Sessao
+INSERT INTO sessao(horatermino,secretariomesa,horainicio,coordenador,idturma,data)
+values(11,'Josemar',10,'Genesio',4,'2017-05-11');
+INSERT INTO sessao(horatermino,secretariomesa,horainicio,coordenador,idturma,data)
+values(14,'Kecio',13,'Josemar',3,'2017-05-11');
+INSERT INTO sessao(horatermino,secretariomesa,horainicio,coordenador,idturma,data)
+values(11,'Genesio',10,'Rafaela',1,'2017-05-11');
+INSERT INTO sessao(horatermino,secretariomesa,horainicio,coordenador,idturma,data)
+values(11,'Josemar',10,'Kecio',2,'2017-05-11');
+INSERT INTO sessao(horatermino,secretariomesa,horainicio,coordenador,idturma,data)
+values(11,'Rafaela',10,'Genesio',5,'2017-05-11');
+
+--Povoando Tabela Aluno
+INSERT INTO aluno ("nomealuno", "idturma")
+Values ('Josemar',2);
+INSERT INTO aluno ("nomealuno", "idturma")
+Values ('Genesio',1);
+INSERT INTO aluno ("nomealuno", "idturma")
+Values ('Kecio',2);
+INSERT INTO aluno ("nomealuno", "idturma")
+Values ('Rafaela',1);
+INSERT INTO aluno ("nomealuno", "idturma")
+Values ('Claudia',4);
+INSERT INTO aluno ("nomealuno", "idturma")
+Values ('Ricardo',5);
 
 
 <<<--- FIM (COLOCAR O SCRIPT DENTO DO CAMCO ACIMA !!!).
