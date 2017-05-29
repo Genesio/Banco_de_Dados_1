@@ -125,7 +125,7 @@ values ('LTP',60);
 
 --Povoando TabelaProfessor
 INSERT INTO professor(matricula,nomeprofessor,graduacao,sexo)
-values('Claudia Pinto','Doutorado','F');
+values(1,'Claudia Pinto','Doutorado','F');
 INSERT INTO professor(matricula,nomeprofessor,graduacao,sexo)
 values(2,'Ricardo Sena','Especialista','M');
 INSERT INTO professor(matricula,nomeprofessor,graduacao,sexo)
