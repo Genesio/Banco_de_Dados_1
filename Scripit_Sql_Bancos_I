@@ -233,6 +233,29 @@ INSERT INTO participa_obtido VALUES(1,4);
 INSERT INTO participa_obtido VALUES(3,3);
 
 
+--5º Questão) INICIO
+
+--colocar a 5º questão aqui !!!
+
+
+
+--FIM 5º QUESTÃO
+
+
+
+
+--6º Questão) INICIO
+
+/* Consultar Dados de uma tabela com WHERE – LIKE  - Questão 6.e
+   Consultando a tabela professor a coluna nome 'C%'.*/
+   	
+	SELECT * FROM professor WHERE nomeProfessor LIKE 'C%';
+   
+
+
+
+--FIM 6ºQuestão)
+
 --<<<--- FIM (COLOCAR O SCRIPT DENTO DO CAMCO ACIMA !!!).
 		
 		
