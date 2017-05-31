@@ -66,7 +66,7 @@ Além da postagem d o material no blackboard, o material impresso deve conter:
 		h. Dados de uma tabela com WHERE – e algum operador relacional (<, >, <=, >=, etc.) //Feito
 		i. Dados de uma tabela com BETWEEN //Feito
 		j. Dados de uma tabela, usando GROUP BY, HAVING (agrupamento de dados) 
-		k. Dados de 2 tabelas, usando sub-consultas (EXISTS) 
+		k. Dados de 2 tabelas, usando sub-consultas (EXISTS) //FEITO
 		//Kecio
 		l. Dados de 3 tabelas, usando sub-consultas 
 		m. Dados de 2 tabelas, usando GROUP BY, ORDER BY (ou produto cartesiano, ou join) 
