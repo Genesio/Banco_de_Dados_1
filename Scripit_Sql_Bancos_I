@@ -264,24 +264,29 @@ INSERT INTO participa_obtido VALUES(3,3);
 	select * from aluno  where not exists(select * from turma where idturma=1);
 	
 /* Dados de 3  tabelas, usando sub-consulta -Questão 6.L*/
-	select * from aluno where idturma =(select turma.idturma from turma,sessao where turma.idturma = sessao.idturma and sessao.idturma=1) 
+	select * from aluno where idturma =(select turma.idturma from turma,sessao where turma.idturma = sessao.idturma and sessao.idturma=1); 
 
 /* Dados de 2 tabelas, usando GROU BY, ORDER BY(ou prduto cartesiano ou join)  -Questão 6.M*/
-	select COUNT(razaosocial),razaosocial from instituicao  inner join curso on instituicao.idinstituicao = curso.idinstituicao group by  razaosocial order by razaosocial
+	select COUNT(razaosocial),razaosocial from instituicao  inner join curso on instituicao.idinstituicao = curso.idinstituicao group by  razaosocial order by razaosocial;
 
 /* Dados de 2 tabelas, usando o JOIN -Questão 6.N*/
-	select * from instituicao   join curso on instituicao.idinstituicao = curso.idinstituicao and idcurso = 5
+	select * from instituicao   join curso on instituicao.idinstituicao = curso.idinstituicao and idcurso = 5;
 
 /* Dados de 2 tabelas, utilizando o LEFT JOIN -Questão 6.O*/
-	select * from curso left join turma on curso.idcurso = turma.idcurso and curso.idcurso=4   
+	select * from curso left join turma on curso.idcurso = turma.idcurso and curso.idcurso=4;   
 
 /* Dados de 2 tabelas, utilizando o RIGHT JOIN -Questão 6.P*/
-	select * from sessao right join turma on sessao.idturma = turma.idturma and sessao.horainicio = 10
+	select * from sessao right join turma on sessao.idturma = turma.idturma and sessao.horainicio = 10;
 
 /* Dados de 3 tableas utilizando o IN -Questão 6.q*/
-	select * from aluno where idturma  in(select turma.idturma from turma,sessao where turma.idturma = sessao.idturma and sessao.idturma=4) 
-/* Dados de 2 tabelas usando oSELECT após o FROM*/
+	select * from aluno where idturma  in(select turma.idturma from turma,sessao where turma.idturma = sessao.idturma and sessao.idturma=4);
 
+/* Dados de 2 tabelas usando oSELECT após o FROM*/
+	select a.nometurma from (select * from turma inner join curso on turma.idcurso= curso.idcurso)as a where a.nometurma like 'R%';
+
+/*Dados de 3 tabelas, utilizando função de agregação*/
+	select avg(avalia.nota) from avalia,criterio where avalia.idcriterio= criterio.idcriterio and criterio.idcriterio =
+	(select idcriterio from criterio inner join disciplina on criterio.iddisciplina = disciplina.iddisciplina and disciplina.iddisciplina=4);
 --FIM 6ºQuestão)
 
 --<<<--- FIM (COLOCAR O SCRIPT DENTO DO CAMCO ACIMA !!!).
