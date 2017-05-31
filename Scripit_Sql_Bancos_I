@@ -248,8 +248,12 @@ INSERT INTO participa_obtido VALUES(3,3);
 
 /* Consultando Dados da tabela professor a coluna nomeprofessor que começa com 'C', com WHERE – LIKE  - Questão 6.e */
 	SELECT * FROM professor WHERE nomeProfessor LIKE 'C%';
+
 /* Consultando Dados da tabela aluno a coluna nomealuno que não começa com 'R', com WHERE – NOT LIKE - Questão 6.f*/   
 	SELECT * FROM ALUNO WHERE nomealuno NOT LIKE 'R%';
+
+/* Consultando Dados da tabela instituicao com WHERE e operador > 0 na coluna idinstituicao - Questão 6.h*/  
+	SELECT * FROM instituicao WHERE idinstituicao > 0;
 
 
 --FIM 6ºQuestão)
