@@ -257,9 +257,11 @@ INSERT INTO participa_obtido VALUES(3,3);
 	
 /* Consultando dados da tabela disciplina com BETWEEN ente 1 a 5 - Questão 6.i*/	
 	SELECT * FROM disciplina WHERE iddisciplina BETWEEN 1 AND 5;
+
+/*Consultando dados da tabela turma usando GROUP BY / HAVING no atributo idturma diferente de 1 - Questão 6.j */
+	SELECT *FROM turma  GROUP BY idturma HAVING (idturma) <> 1;
 	
-	
-/* Dados de 2 tabelas, usando sub-consulta(EXISTS)  -Questão 6.k*/
+/* Dados de 2 tabelas, usando sub-consulta(EXISTS)  -Questão 6.k*/ -------
 	select * from aluno  where  exists(select * from turma where idturma=2);
 	select * from aluno  where not exists(select * from turma where idturma=1);
 	
