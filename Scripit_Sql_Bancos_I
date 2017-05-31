@@ -100,15 +100,15 @@ ALTER TABLE participa_obtido
 -- 4º Questão:
 	/* Inserir dados (povoar o banco) nas tabelas. Mínimo de 5 tuplas por tabela */
 --﻿Povoando Tabela Instiuição
-INSERT INTO instituicao (cnpj, enderço, telefone, razaosocial)
+INSERT INTO instituicao (cnpj, razaosocial, telefone, endereço)
 values (14017677000147,'Unifacs','33332222','Rua B');
-INSERT INTO instituicao (cnpj, enderço, telefone, razaosocial)
+INSERT INTO instituicao (cnpj, razaosocial, telefone, endereço)
 values (14017677000148,'UEFS','33332222','AV. Transnordestina');
-INSERT INTO instituicao (cnpj, enderço, telefone, razaosocial)
+INSERT INTO instituicao (cnpj, razaosocial, telefone, endereço)
 values (14017677000149,'FAT','33332222','RUA C');
-INSERT INTO instituicao (cnpj, enderço, telefone, razaosocial)
+INSERT INTO instituicao (cnpj, razaosocial, telefone, endereço)
 values (14017677000149,'FAN','33332222','RUA D');
-INSERT INTO instituicao (cnpj, enderço, telefone, razaosocial)
+INSERT INTO instituicao (cnpj, razaosocial, telefone, endereço)
 values (14017677000150,'UFRB','33332222','RUA A');
 
 --Povoando Tabela Disciplina
