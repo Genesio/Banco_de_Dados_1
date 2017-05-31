@@ -247,7 +247,7 @@ INSERT INTO participa_obtido VALUES(3,3);
 --6º Questão) INICIO
 
 /* Consultar Dados de uma tabela com WHERE – LIKE  - Questão 6.e
-   Consultando a tabela professor a coluna nome 'C%'.*/
+   Consultando a tabela professor a coluna nomeProfessor 'C%'.*/
    	
 	SELECT * FROM professor WHERE nomeProfessor LIKE 'C%';
    
