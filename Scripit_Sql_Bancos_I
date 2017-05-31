@@ -235,7 +235,39 @@ INSERT INTO participa_obtido VALUES(3,3);
 
 --5º Questão) INICIO
 
---colocar a 5º questão aqui !!!
+--  Atualizar todos os valores de um atributo de uma tabela --
+
+UPDATE instituicao
+	SET razaosocial = 'Unifacs'
+
+-- Atualizando os valores de um atributo usando WHERE. --
+
+UPDATE aluno 
+	SET nomeAluno = 'Fulano' 
+    	WHERE matriculaAluno = 6
+
+-- Atualizando os valores de um atributo usando o WHERE com AND --
+
+UPDATE disciplina
+	SET nomeDisciplina = 'Banco de Dados' 
+        WHERE idDisciplina = 1 AND cargaHoraria = 60
+
+-- Atualizando os valores de um atributo usando o WHERE com OR --
+
+UPDATE professor
+	SET graduacao = 'Mestrado' 
+    	WHERE graduacao = 'Mestre' OR sexo = 'M'
+
+-- Atualize os valores de um atributo usando o SELECT junto com o UPDATE --
+
+-- Excluindo todas as linhas de uma tabela --
+
+DELETE FROM turma
+
+-- Excluindo somente as linhas que satisfaçam a uma condição simples. --
+
+DELETE FROM curso 
+	WHERE idInstituicao = 2
 
 
 
