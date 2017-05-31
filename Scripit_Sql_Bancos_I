@@ -260,11 +260,19 @@ INSERT INTO participa_obtido VALUES(3,3);
 	
 	
 /* Dados de 2 tabelas, usando sub-consulta(EXISTS)  -Questão 6.k*/
-select * from aluno  where  exists(select * from turma where idturma=2);
-select * from aluno  where not exists(select * from turma where idturma=1);
-/* Dados de 3*/
-select * from aluno where idturma =(select turma.idturma from turma,sessao where turma.idturma = sessao.idturma and sessao.idturma=1) 
-
+	select * from aluno  where  exists(select * from turma where idturma=2);
+	select * from aluno  where not exists(select * from turma where idturma=1);
+/* Dados de 3  tabelas, usando sub-consulta*/
+	select * from aluno where idturma =(select turma.idturma from turma,sessao where turma.idturma = sessao.idturma and sessao.idturma=1) 
+/* Dados de 2 tabelas, usando GROU BY, ORDER BY(ou prduto cartesiano ou join) */
+	select COUNT(razaosocial),razaosocial from instituicao  inner join curso on instituicao.idinstituicao = curso.idinstituicao group by  razaosocial order by razaosocial
+/* Dados de 2 tabelas, usando o JOIN*/
+	select * from instituicao   join curso on instituicao.idinstituicao = curso.idinstituicao and idcurso = 5
+/* Dados de 2 tabelas, utilizando o LEFT JOIN*/
+	select * from curso left join turma on curso.idcurso = turma.idcurso and curso.idcurso=4   
+/* Dados de 2 tabelas, utilizando o RIGHT JOIN*/
+	select * from sessao right join turma on sessao.idturma = turma.idturma and sessao.horainicio = 10
+/* */
 --FIM 6ºQuestão)
 
 --<<<--- FIM (COLOCAR O SCRIPT DENTO DO CAMCO ACIMA !!!).
