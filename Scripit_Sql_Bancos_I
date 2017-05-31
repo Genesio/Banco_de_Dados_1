@@ -262,6 +262,8 @@ INSERT INTO participa_obtido VALUES(3,3);
 /* Dados de 2 tabelas, usando sub-consulta(EXISTS)  -Questão 6.k*/
 select * from aluno  where  exists(select * from turma where idturma=2);
 select * from aluno  where not exists(select * from turma where idturma=1);
+/* Dados de 3*/
+select * from aluno where idturma =(select turma.idturma from turma,sessao where turma.idturma = sessao.idturma and sessao.idturma=1) 
 
 --FIM 6ºQuestão)
 
