@@ -60,11 +60,11 @@ Além da postagem d o material no blackboard, o material impresso deve conter:
 		c. Dados de uma tabela com WHERE – AND 
 		d. Dados de uma tabela com WHERE – OR 
 		//Genesio
-		e. Dados de uma tabela com WHERE – LIKE 
-		f. Dados de uma tabela com WHERE – NOT LIKE (deve ser uma consulta diferente da anterior) 
+		e. Dados de uma tabela com WHERE – LIKE //Feito
+		f. Dados de uma tabela com WHERE – NOT LIKE (deve ser uma consulta diferente da anterior) //Feito
 		g. Dados de uma tabela com WHERE – IN (sem sub-consulta) 
-		h. Dados de uma tabela com WHERE – e algum operador relacional (<, >, <=, >=, etc.) 
-		i. Dados de uma tabela com BETWEEN 
+		h. Dados de uma tabela com WHERE – e algum operador relacional (<, >, <=, >=, etc.) //Feito
+		i. Dados de uma tabela com BETWEEN //Feito
 		j. Dados de uma tabela, usando GROUP BY, HAVING (agrupamento de dados) 
 		k. Dados de 2 tabelas, usando sub-consultas (EXISTS) 
 		//Kecio
