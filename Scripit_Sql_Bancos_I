@@ -252,13 +252,16 @@ INSERT INTO participa_obtido VALUES(3,3);
 /* Consultando dados da tabela aluno a coluna nomealuno que não começa com 'R', com WHERE – NOT LIKE - Questão 6.f*/   
 	SELECT * FROM ALUNO WHERE nomealuno NOT LIKE 'R%';
 
+/*Consultando dados da tabela sessao, com WHERE – IN ao atributo idsessao de (3,2,5) Questão 6.g*/
+	SELECT * FROM SESSAO WHERE IDSESSAO IN (3,2,5);
+	
 /* Consultando dados da tabela instituicao com WHERE e operador > 0 na coluna idinstituicao - Questão 6.h*/  
 	SELECT * FROM instituicao WHERE idinstituicao > 0;
 	
 /* Consultando dados da tabela disciplina com BETWEEN ente 1 a 5 - Questão 6.i*/	
 	SELECT * FROM disciplina WHERE iddisciplina BETWEEN 1 AND 5;
 	
-	
+
 /* Dados de 2 tabelas, usando sub-consulta(EXISTS)  -Questão 6.k*/
 	select * from aluno  where  exists(select * from turma where idturma=2);
 	select * from aluno  where not exists(select * from turma where idturma=1);
