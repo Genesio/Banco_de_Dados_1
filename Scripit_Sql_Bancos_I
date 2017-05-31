@@ -246,12 +246,10 @@ INSERT INTO participa_obtido VALUES(3,3);
 
 --6º Questão) INICIO
 
-/* Consultar Dados de uma tabela com WHERE – LIKE  - Questão 6.e
-   Consultando a tabela professor a coluna nomeProfessor 'C%'.*/
-   	
+/* Consultando Dados da tabela professor a coluna nomeprofessor que começa com 'C', com WHERE – LIKE  - Questão 6.e */
 	SELECT * FROM professor WHERE nomeProfessor LIKE 'C%';
-   
-
+/* Consultando Dados da tabela aluno a coluna nomealuno que não começa com 'R', com WHERE – NOT LIKE - Questão 6.f*/   
+	SELECT * FROM ALUNO WHERE nomealuno NOT LIKE 'R%';
 
 
 --FIM 6ºQuestão)
