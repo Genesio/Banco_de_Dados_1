@@ -235,40 +235,52 @@ INSERT INTO participa_obtido VALUES(3,3);
 
 --5º Questão) INICIO
 
---  Atualizar todos os valores de um atributo de uma tabela --
+--  Questão 5.a) Atualizando todos os valores de do atributo razaosocial da tabela instituicao --
 
-UPDATE instituicao
+UPDATE instituicao 
 	SET razaosocial = 'Unifacs'
 
--- Atualizando os valores de um atributo usando WHERE. --
+-- Questão 5.b) Atualizando os valores do atributo matriculaAluno da tabela aluno usando WHERE. --
 
 UPDATE aluno 
 	SET nomeAluno = 'Fulano' 
     	WHERE matriculaAluno = 6
 
--- Atualizando os valores de um atributo usando o WHERE com AND --
+-- Questão 5.c) Atualizando os valores de dois atributos da tabela disciplina usando o WHERE com AND --
 
 UPDATE disciplina
 	SET nomeDisciplina = 'Banco de Dados' 
         WHERE idDisciplina = 1 AND cargaHoraria = 60
 
--- Atualizando os valores de um atributo usando o WHERE com OR --
+-- Questão 5.d) Atualizando os valores de um atributo usando o WHERE com OR na tabela professor  --
 
 UPDATE professor
 	SET graduacao = 'Mestrado' 
     	WHERE graduacao = 'Mestre' OR sexo = 'M'
 
--- Atualize os valores de um atributo usando o SELECT junto com o UPDATE --
+-- Questão 5.e) Atualize os valores de um atributo usando o SELECT junto com o UPDATE --------------------
 
--- Excluindo todas as linhas de uma tabela --
+-- Questão 5.f) Excluindo todas as linhas da tabela turma --
 
 DELETE FROM turma
 
--- Excluindo somente as linhas que satisfaçam a uma condição simples. --
+-- Questão 5.g) Excluindo somente as linhas da tabela curso cujo idInstituicao seja igual a 2. --
 
 DELETE FROM curso 
 	WHERE idInstituicao = 2
+	
+--  Questão 5.h) Excluindo as linhas da tabela curso cujo idInstituicao seja igual a 5 e idCurso igual a 4 utilizando WHERE e AND --
 
+DELETE FROM curso
+	WHERE idInstituicao = 5 AND idCurso = 4
+
+-- Questão 5.i) Excluindo linhas da tabela aluno cujo idTurma seja igual a 2 ou nomeAluno comece com a letra R utilizando WHERE e OR --
+
+
+DELETE FROM aluno
+	WHERE idTurma = 2 OR nomeAluno LIKE 'R%'
+	
+-- Questão 5.j) Exclua linhas utilizando o SELECT junto com o DELETE ------------------
 
 
 --FIM 5º QUESTÃO
