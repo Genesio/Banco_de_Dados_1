@@ -289,6 +289,16 @@ DELETE FROM aluno
 
 
 --6º Questão) INICIO
+/* Selecionar dados das tabelas segundo os critérios (select): - Questão 6.a */
+select * from instituicao
+
+/* Selecionar dados das tabelas segundo os critérios (select): Questão 6.b*/
+select * from instituicao where cnpj='14017677000148'
+
+-- Questão 6. Selecionar dados das tabelas segundo os critérios (select): c. Dados de uma tabela com WHERE – AND
+select * from curso where idinstituicao = '1' and nomeCurso like '%Sistemas%'
+-- Questão 6. Selecionar dados das tabelas segundo os critérios (select): d. Dados de uma tabela com WHERE – OR
+select * from curso where nomeCurso like '%Inf%' or nomeCurso like '%sistemas%'
 
 /* Consultando dados da tabela professor a coluna nomeprofessor que começa com 'C', com WHERE – LIKE  - Questão 6.e */
 	SELECT * FROM professor WHERE nomeProfessor LIKE 'C%';
