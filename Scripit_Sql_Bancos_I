@@ -306,6 +306,9 @@ select * from curso where nomeCurso like '%Inf%' or nomeCurso like '%sistemas%'
 /* Consultando dados da tabela aluno a coluna nomealuno que não começa com 'R', com WHERE – NOT LIKE - Questão 6.f*/   
 	SELECT * FROM ALUNO WHERE nomealuno NOT LIKE 'R%';
 
+/*Consultando dados da tabela sessao , coluna coodernador com WHERE – IN (sem sub-consulta) - Questão 6.g*/
+	SELECT * FROM sessao WHERE coordenador IN (coordenador);
+
 /* Consultando dados da tabela instituicao com WHERE e operador > 0 na coluna idinstituicao - Questão 6.h*/  
 	SELECT * FROM instituicao WHERE idinstituicao > 0;
 	
