@@ -258,7 +258,10 @@ UPDATE professor
 	SET graduacao = 'Mestrado' 
     	WHERE graduacao = 'Mestre' OR sexo = 'M'
 
--- Questão 5.e) Atualize os valores de um atributo usando o SELECT junto com o UPDATE --------------------
+-- 5.e) Atualize os valores de um atributo usando o SELECT junto com o UPDATE 
+UPDATE aluno  
+ SET nomealuno = 'Maria Rita' WHERE matriculaaluno =(SELECT turma.idturma FROM turma,sessao WHERE turma.idturma = sessao.idturma AND sessao.idturma=4)
+
 
 -- Questão 5.f) Excluindo todas as linhas da tabela turma --
 
